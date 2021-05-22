@@ -1,0 +1,52 @@
+body{
+    background-color: silver;
+    font-family: 'Newsreader', serif;
+    font-weight: 400;
+    color: black;
+}
+.table {
+    background-color: white;
+    width: 90%;
+    margin: 50px auto;
+    box-shadow: 0 0 20px #333;
+    outline: 2px solid black;
+
+    display: grid;
+    grid-template-columns: 18% 18% 28% 18% 18%;
+    grid-auto-rows: 2em; 
+    
+}
+.table--header,.table--item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    outline: 0.1px solid black;
+}
+.table--header{
+    background-color: rgb(230, 225, 225);
+    font-weight: 600;
+    font-size: .6em;
+}
+.table--item{
+    font-size: .5em;
+}
+
+/* tablet */
+@media screen and (min-width: 480px){
+    .table--header{
+        font-size: .8em;
+    }
+    .table--item{
+        font-size: .65em;
+    }
+}
+/* web */
+@media screen and (min-width: 780px){
+    .table--header{
+        font-size: 1.1em;
+    }
+    .table--item{
+        font-size: .9em;
+    }
+}
